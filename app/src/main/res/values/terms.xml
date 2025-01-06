@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="term_array">
+        <item>I Mid Term</item>
+        <item>I Term</item>
+        <item>II Mid Term</item>
+        <item>II Term</item>
+    </string-array>
+</resources>

@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PdfSettingsActivity">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/pdf_settings_back_button"
+        android:layout_alignParentStart="true"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/back_arrow" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pdf_settings_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Report Card Settings"
+        android:textColor="@color/black"
+        android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/pdf_style_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pdf_settings_heading"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Pdf Styling"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/reset_style_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/round_border"
+            android:layout_below="@+id/pdf_settings_heading"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Reset to Defaults"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/ellipse_border"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/pdf_style_linear_layout"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:layout_below="@id/pdf_style_heading"
+            android:layout_height="wrap_content">
+
+<!--            first linear layout-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/black"
+                    android:text="PDF Border Type : "/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:layout_height="wrap_content">
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="end"
+                        android:id="@+id/pdf_border_type_spinner"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+            <!--            Second linear layuot-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/black"
+                    android:text="PDF Border Width: "/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="100dp"
+                        android:background="@drawable/round_search"
+                        android:text="1"
+                        android:padding="5dp"
+                        android:fontFamily="@font/poppins"
+                        android:layout_margin="5dp"
+                        android:textAlignment="center"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/pdf_border_width_input"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:text="PDF Table Color: "/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:layout_width="25dp"
+                        android:id="@+id/color_preview_view"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ellipse_border"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="25dp"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/roundbutton"
+                        android:text="Pick"
+                        android:textColor="@color/white"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:fontFamily="@font/poppins"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="center"
+                        android:id="@+id/color_picker_button"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:text="PDF Background: "/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:layout_width="25dp"
+                        android:id="@+id/font_color_preview_view"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ellipse_border"
+                        android:layout_height="25dp"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/roundbutton"
+                        android:text="Pick"
+                        android:textColor="@color/white"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:fontFamily="@font/poppins"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="center"
+                        android:id="@+id/bg_color_picker_button"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:text="Coscholastic Table Color: "/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:layout_width="25dp"
+                        android:id="@+id/co_table_color_preview_view"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ellipse_border"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="25dp"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/roundbutton"
+                        android:text="Pick"
+                        android:textColor="@color/white"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:fontFamily="@font/poppins"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="center"
+                        android:id="@+id/co_table_color_picker_button"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:text="PDF Logo Size: "/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="100dp"
+                        android:background="@drawable/round_search"
+                        android:text="50"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:fontFamily="@font/poppins"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="center"
+                        android:id="@+id/pdf_logo_size_input"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/pdf_sections_linear_layout"
+            android:layout_below="@id/pdf_style_linear_layout"
+            android:layout_height="wrap_content">
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/enable_signature_heading"
+            android:layout_below="@id/pdf_sections_linear_layout"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/signature_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Enable Signature"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/enable_signature_checkbox"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/enable_signature_heading"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:id="@+id/signature_linear_layout"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:id="@+id/signature_pad_frame"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:elevation="25dp"
+                        android:orientation="vertical"
+                        app:cardCornerRadius="20dp">
+
+                        <EditText
+                            android:id="@+id/signee_name_input"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round_border"
+                            android:backgroundTint="#EFEEEE"
+                            android:fontFamily="@font/poppins_medium"
+                            android:hint="Enter Signee Name"
+                            android:inputType="textCapWords"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:elevation="25dp"
+                        android:orientation="vertical"
+                        app:cardCornerRadius="20dp">
+
+                        <EditText
+                            android:id="@+id/signee_role_input"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round_border"
+                            android:backgroundTint="#EFEEEE"
+                            android:fontFamily="@font/poppins_medium"
+                            android:hint="Enter Designation/Title"
+                            android:inputType="textCapWords"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:text="Draw Signature : "/>
+
+
+                    <com.github.gcacace.signaturepad.views.SignaturePad
+                        android:id="@+id/signature_pad"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/ellipse_border"
+                        android:layout_below="@+id/pdf_sections_linear_layout"
+                        app:penColor="@color/black"
+                        app:penMinWidth="3dp"
+                        app:penMaxWidth="7dp"
+                        app:backgroundColor="@color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Clear Canvas"
+                        android:textSize="14sp"
+                        android:padding="5dp"
+                        android:id="@+id/clear_canvas_textView"
+                        android:textColor="@color/black"
+                        android:background="@drawable/round_logout"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+
+        <FrameLayout
+            android:id="@+id/etho_frame"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/signature_linear_layout"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/progress_bar_of_pdf_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:outlineSpotShadowColor="@color/colorPrimary"
+                android:progressBackgroundTint="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/pdf_settings_save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/roundbutton"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Save Preferences"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+
+        </FrameLayout>
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

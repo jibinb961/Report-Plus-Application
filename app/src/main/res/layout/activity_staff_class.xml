@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StaffClassActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/staff_class_back_layout"
+            android:layout_alignParentStart="true"
+            android:padding="20dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/add_exam_back_button"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back_arrow" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/Your_Classes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="My Classes"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:id="@+id/staff_classes_recyclerView"
+            android:layout_below="@id/Your_Classes"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

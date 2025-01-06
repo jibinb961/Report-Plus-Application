@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IndividualAnalyticsActivity">
+
+    <ImageView
+        android:id="@+id/analytics_students_individual_back_button"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/back_arrow" />
+
+    <TextView
+        android:id="@+id/analytics_students_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Student Analytics"
+        android:textColor="@color/black"
+        android:textSize="19sp" />
+
+    <LinearLayout
+        android:id="@+id/analytics_student_individual_linear"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/ellipse_border"
+        android:orientation="horizontal"
+        android:layout_below="@+id/analytics_students_heading"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/graduated"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/analytics_student_name"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content"
+                android:text="Name :  "/>
+            <TextView
+                android:id="@+id/analytics_student_class"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content"
+                android:text="Class :  "/>
+            <TextView
+                android:id="@+id/analytics_student_roll_number"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content"
+                android:text="Roll No :  "/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+    android:id="@+id/analytics_frame_layout"
+    android:layout_width="match_parent"
+    android:layout_below="@+id/analytics_student_individual_linear"
+    android:layout_above="@+id/coordinator_layout_for_analytics_module"
+    android:layout_height="match_parent"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/coordinator_layout_for_analytics_module"
+        android:background="#DDDDDD"/>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/coordinator_layout_for_analytics_module"
+        android:layout_height="wrap_content">
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:layout_width="match_parent"
+            android:id="@+id/bottom_app_bar_analytics"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content"
+            app:fabCradleMargin="10dp"
+            app:fabCradleRoundedCornerRadius="10dp"
+            app:fabCradleVerticalOffset="10dp">
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bottom_nav_bar_analytics"
+                app:menu="@menu/student_menu"
+                android:background="@drawable/transparent_background"
+                android:layout_marginRight="16dp"/>
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+</RelativeLayout>

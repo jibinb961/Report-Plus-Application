@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/students"
+        android:title="Students"
+        android:icon="@drawable/ic_baseline_students"/>
+    <item
+        android:id="@+id/exams"
+        android:title="Exams"
+        android:icon="@drawable/ic_baseline_exams"/>
+    <item
+        android:id="@+id/attendance"
+        android:title="Attendance"
+        android:icon="@drawable/ic_baseline_attendance"/>
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_baseline_settings_24"/>
+
+</menu>

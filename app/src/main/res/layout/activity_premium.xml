@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PremiumActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/update_premium_back_button"
+            android:layout_alignParentStart="true"
+            android:padding="20dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back_arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/top_premium_linear_layout"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Upgrade to Premium"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/upgrade"/>
+
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:elevation="10dp"
+            android:id="@+id/feature_list_cardview"
+            android:layout_below="@+id/top_premium_linear_layout"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/appfeatures"
+                android:scaleType="centerInside"
+                android:layout_marginBottom="10dp"
+                android:layout_height="400dp">
+
+            </ImageView>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/feature_list_cardview"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/upgrade_to_premium_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundbutton"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/poppins"
+                android:text="Upgrade to Premium"/>
+           <TextView
+               android:id="@+id/try_premium_text_view"
+               android:layout_width="match_parent"
+               android:textSize="18sp"
+               android:gravity="center"
+               android:textColor="@color/colorPrimary"
+               android:fontFamily="@font/poppins"
+               android:layout_height="wrap_content"
+               android:text="Try Premium for Free?"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

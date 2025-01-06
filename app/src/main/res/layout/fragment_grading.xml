@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GradingFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:id="@+id/Grading_text_heading"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins"
+                android:textStyle="bold"
+                android:text="Grading System"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@id/Grading_text_heading"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:elevation="10dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/ellipse_border"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"
+                            android:text="A+       : "/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_gravity="end"
+                            android:gravity="end"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:textColor="@color/black"
+                                android:layout_height="wrap_content"
+                                android:text="greater than"/>
+
+                            <EditText
+                                android:id="@+id/aplus_percentage"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/ellipse_border"
+                                android:hint="0%"
+                                android:inputType="number"
+                                android:padding="10dp"
+                                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:text=" %"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--          //second cacrd-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:elevation="10dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/ellipse_border"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"
+                            android:text="A       : "/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_gravity="end"
+                            android:gravity="end"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:textColor="@color/black"
+                                android:layout_height="wrap_content"
+                                android:text="greater than"/>
+                            <EditText
+                                android:id="@+id/a_percentage"
+                                android:layout_width="60dp"
+                                android:padding="10dp"
+                                android:hint="0%"
+                                android:inputType="number"
+                                android:background="@drawable/ellipse_border"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:text=" %"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:elevation="10dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/ellipse_border"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"
+                            android:text="B+       : "/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_gravity="end"
+                            android:gravity="end"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:textColor="@color/black"
+                                android:layout_height="wrap_content"
+                                android:text="greater than"/>
+                            <EditText
+                                android:id="@+id/bplus_percentage"
+                                android:layout_width="60dp"
+                                android:padding="10dp"
+                                android:hint="0%"
+                                android:inputType="number"
+                                android:background="@drawable/ellipse_border"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:text=" %"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:elevation="10dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/ellipse_border"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"
+                            android:text="B       : "/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_gravity="end"
+                            android:gravity="end"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:textColor="@color/black"
+                                android:layout_height="wrap_content"
+                                android:text="greater than"/>
+                            <EditText
+                                android:id="@+id/b_percentage"
+                                android:layout_width="60dp"
+                                android:padding="10dp"
+                                android:hint="0%"
+                                android:inputType="number"
+                                android:background="@drawable/ellipse_border"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:text=" %"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:elevation="10dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/ellipse_border"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"
+                            android:text="C       : "/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_gravity="end"
+                            android:gravity="end"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:textColor="@color/black"
+                                android:layout_height="wrap_content"
+                                android:text="greater than"/>
+                            <EditText
+                                android:id="@+id/c_percentage"
+                                android:layout_width="60dp"
+                                android:padding="10dp"
+                                android:hint="0%"
+                                android:inputType="number"
+                                android:background="@drawable/ellipse_border"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:text=" %"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:elevation="10dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/ellipse_border"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"
+                            android:text="D       : "/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_gravity="end"
+                            android:gravity="end"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/poppins"
+                                android:textColor="@color/black"
+                                android:layout_height="wrap_content"
+                                android:text="greater than"/>
+                            <EditText
+                                android:id="@+id/fail_percentage"
+                                android:layout_width="60dp"
+                                android:padding="10dp"
+                                android:hint="0%"
+                                android:inputType="number"
+                                android:background="@drawable/ellipse_border"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:text=" %"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/fail_text"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Marks less than D grade is considered as failed"/>
+
+                <Button
+                    android:id="@+id/grade_update_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/roundbutton"
+                    android:textColor="@color/white"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</FrameLayout>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCoscholasticActivity">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/add_coscholastic_back_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/add_coscholastic_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Coscholastic"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_coscholastic_textview"
+            android:background="@drawable/ellipse_border"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:elevation="25dp"
+                app:cardCornerRadius="20dp"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/activity_name_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#EFEEEE"
+                    android:fontFamily="@font/poppins_medium"
+                    android:background="@drawable/round_button"
+                    android:inputType="textCapWords"
+                    android:textSize="16sp"
+                    android:hint="Enter Activity Name"
+                    android:padding="10dp" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:elevation="25dp"
+                app:cardCornerRadius="20dp"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/coscholastic_grading_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#EFEEEE"
+                    android:inputType="textPersonName"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    android:hint="Grading System"
+                    android:fontFamily="@font/poppins_medium"
+                    android:background="@drawable/round_button"
+                    android:textSize="16sp"
+                    android:padding="10dp" />
+            </androidx.cardview.widget.CardView>
+
+
+
+           <FrameLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:id="@+id/number_system"
+                   android:layout_width="match_parent"
+                   android:orientation="vertical"
+                   android:gravity="left"
+                   android:layout_marginTop="20dp"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:text=">80: Excellent"
+                       android:textSize="16sp"
+                       android:fontFamily="@font/poppins"
+                       android:textColor="@color/colorPrimary"
+                       android:textStyle="bold"
+                       android:layout_height="wrap_content"
+                       />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:text=">70: Good"
+                       android:textSize="16sp"
+                       android:fontFamily="@font/poppins"
+                       android:textColor="@color/colorPrimary"
+                       android:textStyle="bold"
+                       android:layout_height="wrap_content"
+                       />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:text=">50: Average"
+                       android:textSize="16sp"
+                       android:fontFamily="@font/poppins"
+                       android:textColor="@color/colorPrimary"
+                       android:textStyle="bold"
+                       android:layout_height="wrap_content"
+                       />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:text=">40: Poor"
+                       android:textSize="16sp"
+                       android:fontFamily="@font/poppins"
+                       android:textColor="@color/colorPrimary"
+                       android:textStyle="bold"
+                       android:layout_height="wrap_content"
+                       />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/alphabetical_system"
+                   android:layout_width="match_parent"
+                   android:orientation="vertical"
+                   android:gravity="left"
+                   android:layout_marginTop="20dp"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:text="A: Excellent"
+                       android:textSize="16sp"
+                       android:fontFamily="@font/poppins"
+                       android:textColor="@color/colorPrimary"
+                       android:textStyle="bold"
+                       android:layout_height="wrap_content"
+                       />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:text="B: Good"
+                       android:textSize="16sp"
+                       android:fontFamily="@font/poppins"
+                       android:textColor="@color/colorPrimary"
+                       android:textStyle="bold"
+                       android:layout_height="wrap_content"
+                       />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:text="C: Average"
+                       android:textSize="16sp"
+                       android:fontFamily="@font/poppins"
+                       android:textColor="@color/colorPrimary"
+                       android:textStyle="bold"
+                       android:layout_height="wrap_content"
+                       />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:text="D: Poor"
+                       android:textSize="16sp"
+                       android:fontFamily="@font/poppins"
+                       android:textColor="@color/colorPrimary"
+                       android:textStyle="bold"
+                       android:layout_height="wrap_content"
+                       />
+               </LinearLayout>
+
+
+           </FrameLayout>
+
+
+
+
+
+            <Button
+                android:id="@+id/add_activity_ok_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/round_button"
+                android:text="Add"
+                android:textColor="@color/white" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:id="@+id/delete_activity_frame"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:id="@+id/delete_activity_button"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_button"
+                    android:textColor="@color/black"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:text="Delete this Activity"/>
+            </FrameLayout>
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

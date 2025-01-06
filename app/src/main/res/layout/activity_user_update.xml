@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserUpdateActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/profile_back_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/edit_profile_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Update Profile"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_profile_heading"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="75dp"
+                android:id="@+id/school_profile_card"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="50dp"
+                android:layout_height="75dp">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ProgressBar
+                        android:id="@+id/progress_bar_behind_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:layout_marginBottom="20dp"
+                        android:outlineSpotShadowColor="@color/colorPrimary"
+                        android:progressBackgroundTint="@color/colorPrimary"/>
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/school_profile_circle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+                        android:src="@drawable/ic_baseline_insert_photo_24" />
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Institution Logo *" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:elevation="25dp"
+                app:cardCornerRadius="20dp"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/school_name_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#EFEEEE"
+                    android:fontFamily="@font/poppins_medium"
+                    android:background="@drawable/round_button"
+                    android:inputType="textCapWords"
+                    android:textSize="16sp"
+                    android:hint="Enter Institution Name"
+                    android:padding="10dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:elevation="25dp"
+                app:cardCornerRadius="20dp">
+
+
+                <EditText
+                    android:id="@+id/school_address_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#EFEEEE"
+                    android:background="@drawable/round_border"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="textCapWords"
+                    android:textSize="16sp"
+                    android:hint="Enter Institution Address"
+                    android:padding="10dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:elevation="25dp"
+                app:cardCornerRadius="20dp">
+
+
+
+                <EditText
+                    android:id="@+id/school_contact_number_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#EFEEEE"
+                    android:background="@drawable/round_border"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="number"
+                    android:textSize="16sp"
+                    android:hint="Enter Institution Contact Number"
+                    android:padding="10dp" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:elevation="25dp"
+                app:cardCornerRadius="20dp">
+
+
+
+                <EditText
+                    android:id="@+id/country_code_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#EFEEEE"
+                    android:background="@drawable/round_border"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="number"
+                    android:textSize="16sp"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    android:hint="Enter Country Code"
+                    android:padding="10dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <RadioGroup
+                android:id="@+id/inst_type_radio_group"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/school_type"
+                    android:layout_height="wrap_content"
+                    android:text="School/College"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/coaching_type"
+                    android:layout_marginStart="10dp"
+                    android:text="Coaching Center"
+                    />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="15sp"
+                        android:text="Set admin password" />
+                    <ImageButton
+                        android:id="@+id/admin_password_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_info"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/white"/>
+                </LinearLayout>
+
+
+
+                <EditText
+                    android:id="@+id/school_admin_password_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="Enter 4 digit PIN"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:backgroundTint="#EFEEEE"
+                    android:background="@drawable/round_button"
+                    android:inputType="numberPassword"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_of_india"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/loginButton"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_marginBottom="20dp"
+                    android:outlineSpotShadowColor="@color/colorPrimary"
+                    android:progressBackgroundTint="@color/colorPrimary" />
+                <Button
+                    android:id="@+id/update_institution_detail_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/round_border"
+                    android:text="Update"
+                    android:textColor="@color/white" />
+
+
+            </FrameLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_margin="30dp"
+                android:textAlignment="center"
+                android:text="* Upload your institution logo in white background for better look in report card"/>
+
+            <TextView
+                android:id="@+id/view_sample_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:background="@drawable/round_border"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/colorSecondary"
+                android:textAlignment="center"
+                android:text="View a sample logo?"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

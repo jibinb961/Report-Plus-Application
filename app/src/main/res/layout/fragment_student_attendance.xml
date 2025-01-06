@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentAttendanceFragment">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Absent Days"
+          android:id="@+id/absent_days_textView"
+          android:fontFamily="@font/poppins"
+          android:textColor="@color/black"
+          android:textSize="16sp"
+          android:textStyle="bold"
+          android:layout_marginLeft="10dp"/>
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:id="@+id/no_absence_image"
+          android:layout_centerInParent="true"
+          android:layout_height="wrap_content"
+          android:src="@drawable/success"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_centerInParent="true"
+          android:layout_below="@+id/no_absence_image"
+          android:layout_height="wrap_content"
+          android:textColor="@color/black"
+          android:fontFamily="@font/poppins"
+          android:layout_marginTop="10dp"
+          android:text="No Absent Days"
+          android:id="@+id/no_students_attendance_analytics_view"/>
+
+      <ListView
+          android:layout_width="match_parent"
+          android:layout_margin="10dp"
+          android:id="@+id/absent_list_listView"
+          android:background="@drawable/ellipse_border"
+          android:layout_below="@id/absent_days_textView"
+          android:layout_height="wrap_content"/>
+  </RelativeLayout>
+
+
+</FrameLayout>

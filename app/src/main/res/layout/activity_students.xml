@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentsActivity">
+
+
+
+    <ImageView
+        android:id="@+id/students_back_button"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/back_arrow" />
+
+    <TextView
+        android:id="@+id/students_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Students"
+        android:textColor="@color/black"
+        android:textSize="19sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/search_student_card_view"
+        android:layout_margin="20dp"
+        android:elevation="30dp"
+        android:layout_below="@+id/students_heading"
+        app:cardCornerRadius="30dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/find_student_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#EFEEEE"
+            android:background="@drawable/round_button"
+            android:drawableRight="@drawable/search_icon"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins"
+            android:hint="Search a student"
+            android:inputType="textCapWords"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="#95000000"
+            android:textSize="12sp" />
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/students_no_students_text"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="30dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="end"
+        android:layout_above="@id/button_linear_layout"
+        android:layout_marginRight="25dp"
+        android:layout_height="wrap_content"    >
+       <com.airbnb.lottie.LottieAnimationView
+           android:layout_width="70dp"
+           android:id="@+id/students_down_animation"
+           app:lottie_autoPlay="true"
+           android:layout_gravity="end"
+           app:lottie_loop="true"
+           app:lottie_rawRes="@raw/down_anim"
+           android:layout_height="70dp"/>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/find_students_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/search_student_card_view">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/button_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="end"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/add_student_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_button"
+            android:text="Add" />
+    </LinearLayout>
+
+</RelativeLayout>

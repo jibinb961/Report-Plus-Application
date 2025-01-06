@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListStudentsActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/list_students_back_button"
+        android:layout_alignParentStart="true"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/back_arrow" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/list_students_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Students"
+        android:textColor="@color/black"
+        android:textSize="19sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:id="@+id/long_press_linear"
+        android:layout_below="@id/list_students_heading"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_info"/>
+        <TextView
+            android:id="@+id/long_press_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorSecondary"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Long press on student to delete!"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/no_student_text"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="30dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/addmarks_students_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/long_press_linear">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

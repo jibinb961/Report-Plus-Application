@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="stream_option">
+        <item>General</item>
+        <item>Computer Science</item>
+        <item>Bio Maths</item>
+        <item>Bio IP</item>
+        <item>Commerce Maths</item>
+        <item>Commerce IP</item>
+    </string-array>
+</resources>

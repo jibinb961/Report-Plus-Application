@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddStaffActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/add_staff_back_button"
+            android:layout_alignParentStart="true"
+            android:padding="20dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back_arrow" />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/add_staff_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Add staff"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_staff_heading"
+            android:background="@drawable/ellipse_border"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:elevation="25dp"
+            app:cardCornerRadius="20dp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/add_staff_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#EFEEEE"
+                android:fontFamily="@font/poppins_medium"
+                android:background="@drawable/round_button"
+                android:inputType="textCapWords"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:hint="Staff Name"
+                android:padding="10dp" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:elevation="25dp"
+            app:cardCornerRadius="20dp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/add_staff_salary_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#EFEEEE"
+                android:fontFamily="@font/poppins_medium"
+                android:background="@drawable/round_button"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:hint="Salary"
+                android:padding="10dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:elevation="25dp"
+            app:cardCornerRadius="20dp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/add_staff_phone_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#EFEEEE"
+                android:fontFamily="@font/poppins_medium"
+                android:background="@drawable/round_button"
+                android:inputType="phone"
+                android:textSize="16sp"
+                android:hint="Phone Number"
+                android:padding="10dp" />
+        </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assign class/classes"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:id="@+id/no_subjects_frame_exams"
+                android:layout_height="wrap_content">
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/addClassChipGroup"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ellipse_border"
+                    android:layout_height="wrap_content">
+
+
+                </com.google.android.material.chip.ChipGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:id="@+id/addStaffNoClassText"
+                    android:text="@string/no_class_text"
+                    android:textColor="@color/black"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/add_staff_ok_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/roundbutton"
+                    android:text="Add staff"
+                    android:textColor="@color/white" />
+            </FrameLayout>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins"
+                android:id="@+id/view_password_checkbox"
+                android:text="View Staff Password"/>
+
+            <FrameLayout
+                android:id="@+id/staff_password_frame"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/staff_password_text"
+                    android:layout_width="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/poppins"
+                    android:layout_height="wrap_content"
+                    android:text="Password"/>
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

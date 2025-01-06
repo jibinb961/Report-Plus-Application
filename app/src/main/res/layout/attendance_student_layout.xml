@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/attendance_student_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins"
+                android:text="Exam Name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:id="@+id/attendance_mark_frame"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/attendance_image"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/checked"
+                    android:layout_gravity="end"
+                    android:padding="15dp"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E6E6E6"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/attendance_student_roll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="Hostel"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimaryVariant"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

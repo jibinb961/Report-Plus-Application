@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Report Plus</string>
+    <string name="loginpagename">Report Generator</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="report_intro">Welcome to Report Plus!</string>
+    <string name="subject_heading">Step 1 : Add Subjects</string>
+    <string name="exams_heading">Step 2 : Add Exams</string>
+    <string name="classes_heading">Step 3 : Add Classes</string>
+    <string name="student_heading">Step 4 : Add Students</string>
+    <string name="marking_heading">Step 5 : Add Marks</string>
+    <string name="coscholastic_heading">Step 6 : Add Activities</string>
+    <string name="pdf_heading">Step 7 : Generate PDF</string>
+
+    <string name="subject_desc">Add all the subjects that your institution deals with. You can add N number of subjects and later assign subjects to classes from this subject list.</string>
+    <string name="exams_desc">Create exams by adding the time period. Exams can be assigned to classes and teachers can update marks for these exams.Exams can also be assigned with co-scholastic activities like Health Education, Physical Education etc.</string>
+    <string name="classes_desc">Create classes by assigning subjects and exams that belongs to that particular class.User can also set Class PIN which will add an extra layer of security</string>
+    <string name="student_desc">Create students by assigning each of them to a class. Extra student information can also be added!</string>
+    <string name="marking_desc">Update student marks for each exams which the class is assigned wth. Add co-scholastic marks also with the exams.</string>
+    <string name="coscholastic_desc">Create Co-scholastic activities like Sports, or other extra curricular activities that can be added with an exam</string>
+    <string name="pdf_desc">Generate Report Card for each student in PDF format with many options including creating report card for selected exams only.</string>
+    <string name="report_desc">Report Plus is not just a report card generating app, it is capable of managing much more. Slide through the cards to know more —> </string>
+    <string name="title_activity_staff_module">StaffActivityModule</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="no_class_text">No classes are added, go to classes module to add a class!</string>
+
+
+</resources>

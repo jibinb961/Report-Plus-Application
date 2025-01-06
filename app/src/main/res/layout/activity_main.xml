@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pdf_ad_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="MEDIUM_RECTANGLE"
+        android:layout_centerHorizontal="true"
+        ads:adUnitId="ca-app-pub-8836288417309387/9896389245">
+    </com.google.android.gms.ads.AdView>
+    <TextView
+        android:id="@+id/pdf_text"
+        android:layout_above="@id/pdf_linear"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/pdf_ad_view"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="10sp"
+        android:textColor="#E9000000"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:text="All pdfs are stored in a folder - ReportPlus. \n Path : storage/ReportPlus"
+        />
+
+    <RelativeLayout
+        android:id="@+id/pdf_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_centerInParent="true"
+        android:elevation="10dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/border_shadow"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/download_icon"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/download_anim" />
+
+        <TextView
+            android:id="@+id/donwload_text"
+            android:layout_below="@id/download_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:textColor="@color/purple_700"
+            android:layout_centerHorizontal="true"
+            android:text="Successfully created PDF"
+            />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/create_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pdf_send"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorSecondary"
+        android:text="Go to Home"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/pdf_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pdf_linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roundbutton"
+        android:text="Open PDF"
+        android:textColor="@color/white" />
+    <Button
+        android:id="@+id/pdf_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pdf_path"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roundbutton"
+        android:text="Send PDF to Parent"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
