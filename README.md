@@ -36,4 +36,14 @@ _Add screenshots of the application here._
 
 1. Clone this repository:  
    ```bash  
-   git clone https://github.com/yourusername/ReportPlus.git  
+   git clone https://github.com/yourusername/ReportPlus.git
+2. Add your google-services.json file to the appropriate location in the project directory.
+3. Build and run the application using your preferred Java IDE.
+
+## Contributions
+
+Contributions, issues, and feature requests are welcome! Feel free to fork this repository and create pull requests.
+
+## License
+
+This project is licensed under the MIT License.
