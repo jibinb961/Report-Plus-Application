@@ -38,44 +38,24 @@ Welcome to **Report Plus** — a comprehensive student management solution desig
 
 ## Screenshots  
 
-### Home Page  
-![Home Page](Images/HomePage.PNG)  
+### Application Screenshots  
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
 
-### App Logo  
-![App Logo](Images/AppLogo.jpeg)  
+<img src="Images/HomePage.PNG" alt="Home Page" width="200px" />
+<img src="Images/AppLogo.jpeg" alt="App Logo" width="200px" />
+<img src="Images/StudentsPage.PNG" alt="Students Page" width="200px" />
+<img src="Images/AttendancePortal.PNG" alt="Attendance Portal" width="200px" />
+<img src="Images/StaffLoginPage.PNG" alt="Staff Login Page" width="200px" />
+<img src="Images/SubjectsPage.PNG" alt="Subjects Page" width="200px" />
+<img src="Images/ExamsPage.PNG" alt="Exams Page" width="200px" />
+<img src="Images/GeneratePDFPage.PNG" alt="Generate PDF Page" width="200px" />
+<img src="Images/SampleReportCard.PNG" alt="Sample Report Card" width="200px" />
+<img src="Images/StudentAnalyticsPage.PNG" alt="Student Analytics Page" width="200px" />
+<img src="Images/GradingSystemPage.PNG" alt="Grading System Page" width="200px" />
+<img src="Images/ClassPIN.PNG" alt="Class PIN Management" width="200px" />
+<img src="Images/StaffsPage.PNG" alt="Staffs Page" width="200px" />
 
-### Students Portal  
-![Students Page](Images/StudentsPage.PNG)  
-
-### Attendance Portal  
-![Attendance Portal](Images/AttendancePortal.PNG)  
-
-### Staff Login Page  
-![Staff Login Page](Images/StaffLoginPage.PNG)  
-
-### Subjects Management  
-![Subjects Page](Images/SubjectsPage.PNG)  
-
-### Exams Management  
-![Exams Page](Images/ExamsPage.PNG)  
-
-### Generate PDF Report Cards  
-![Generate PDF Page](Images/GeneratePDFPage.PNG)  
-
-### Sample Report Card  
-![Sample Report Card](Images/SampleReportCard.PNG)  
-
-### Student Analytics  
-![Student Analytics Page](Images/StudentAnalyticsPage.PNG)  
-
-### Grading System  
-![Grading System Page](Images/GradingSystemPage.PNG)  
-
-### Class PIN Management  
-![Class PIN Management](Images/ClassPIN.PNG)  
-
-### Staff Management  
-![Staffs Page](Images/StaffsPage.PNG)  
+</div>
 
 ---
 
