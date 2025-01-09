@@ -1,4 +1,8 @@
-# Report Plus  
+<h1>
+  <img src="Images/AppLogo.jpeg" alt="Report Plus Logo" width="50px" style="vertical-align: middle;" />
+  Report Plus
+</h1>
+
 
 Welcome to **Report Plus** — a comprehensive student management solution designed to make it easy for schools and educators to manage student data, generate report cards, and organize classes.  
 
