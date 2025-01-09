@@ -46,7 +46,6 @@ Welcome to **Report Plus** — a comprehensive student management solution desig
 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
 
 <img src="Images/HomePage.PNG" alt="Home Page" width="200px" />
-<img src="Images/AppLogo.jpeg" alt="App Logo" width="200px" />
 <img src="Images/StudentsPage.PNG" alt="Students Page" width="200px" />
 <img src="Images/AttendancePortal.PNG" alt="Attendance Portal" width="200px" />
 <img src="Images/StaffLoginPage.PNG" alt="Staff Login Page" width="200px" />
