@@ -1,5 +1,5 @@
 <h1>
-  <img src="Images/AppLogo.jpeg" alt="Report Plus Logo" width="50px" style="vertical-align: middle;" />
+  <img src="Images/AppLogo.jpeg" alt="Report Plus Logo" width="50px" style="vertical-align: bottom;" />
   Report Plus
 </h1>
 
